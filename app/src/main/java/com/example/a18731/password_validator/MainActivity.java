@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     textView.setText("The password cannot include special character");
                 }
                 else if (V.Password(pass) == 4) {
-                    textView.setText("The password is weak ");
+                    textView.setText("The password is weak");
                 }
                 else if (V.Password(pass) == 5) {
                     textView.setText("The password is not strong enough");
