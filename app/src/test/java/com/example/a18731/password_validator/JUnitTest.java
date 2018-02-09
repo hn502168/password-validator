@@ -22,6 +22,24 @@ public class JUnitTest {
         assertEquals(2, V.Password(pass));
     }
     @Test
+    public void specialchar(){
+        Validator V = new Validator();
+        String pass = "@@123456";
+        assertEquals(3, V.Password(pass));
+    }
+    @Test
+    public void lowTest(){
+        Validator V = new Validator();
+        String pass = "qwertyuio";
+        assertEquals(4, V.Password(pass));
+    }
+    @Test
+    public void mediumTest(){
+        Validator V = new Validator();
+        String pass = "12345678A";
+        assertEquals(5, V.Password(pass));
+    }
+    @Test
     public void StrongTest(){
         Validator V = new Validator();
         String pass = "12345abcdeF";
